@@ -1,1 +1,3 @@
-export const hello = "world";
+import { world } from "./world";
+
+export const hello = world;
