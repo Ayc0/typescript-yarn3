@@ -33,16 +33,26 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         [null, {\
           "packageLocation": "./",\
           "packageDependencies": [\
-            ["typescript", "patch:typescript@npm%3A4.8.1-rc#~builtin<compat/typescript>::version=4.8.1-rc&hash=a1c5e5"]\
+            ["@types/node", "npm:18.7.23"],\
+            ["typescript", "patch:typescript@npm%3A4.8.4#~builtin<compat/typescript>::version=4.8.4&hash=a1c5e5"]\
           ],\
           "linkType": "SOFT"\
         }]\
       ]],\
-      ["typescript", [\
-        ["patch:typescript@npm%3A4.8.1-rc#~builtin<compat/typescript>::version=4.8.1-rc&hash=a1c5e5", {\
-          "packageLocation": "./.yarn/cache/typescript-patch-e99fd70c12-96b03a6fa2.zip/node_modules/typescript/",\
+      ["@types/node", [\
+        ["npm:18.7.23", {\
+          "packageLocation": "./.yarn/cache/@types-node-npm-18.7.23-070e968159-2c8df0830d.zip/node_modules/@types/node/",\
           "packageDependencies": [\
-            ["typescript", "patch:typescript@npm%3A4.8.1-rc#~builtin<compat/typescript>::version=4.8.1-rc&hash=a1c5e5"]\
+            ["@types/node", "npm:18.7.23"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["typescript", [\
+        ["patch:typescript@npm%3A4.8.4#~builtin<compat/typescript>::version=4.8.4&hash=a1c5e5", {\
+          "packageLocation": "./.yarn/cache/typescript-patch-5b3c915f01-563a0ef47a.zip/node_modules/typescript/",\
+          "packageDependencies": [\
+            ["typescript", "patch:typescript@npm%3A4.8.4#~builtin<compat/typescript>::version=4.8.4&hash=a1c5e5"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -52,7 +62,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",\
           "packageDependencies": [\
             ["typescript-yarn3", "workspace:."],\
-            ["typescript", "patch:typescript@npm%3A4.8.1-rc#~builtin<compat/typescript>::version=4.8.1-rc&hash=a1c5e5"]\
+            ["@types/node", "npm:18.7.23"],\
+            ["typescript", "patch:typescript@npm%3A4.8.4#~builtin<compat/typescript>::version=4.8.4&hash=a1c5e5"]\
           ],\
           "linkType": "SOFT"\
         }]\
